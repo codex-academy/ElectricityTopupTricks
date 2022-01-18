@@ -1,13 +1,12 @@
 # ElectricityTopupTricks
 
-`Create a web app, to help your local Municipality to track electricity usage per household. Each month the Municipality gives each household 50 units each for free. Households can topup if they need extra electricity.
+Create a web app, to help your local Municipality to track electricity usage per household. Each month the Municipality gives each household 50 units each for free. Households can topup if they need extra electricity.
 
 The factory function is missing some methods and queries. Please sort that out.
 
 Ensure to deploy you application to Travis ans Heroku.
 
 As you use appliances, your units will drop accordingly.
-
 
 Your factory function should have the following methods:
 
