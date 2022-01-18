@@ -30,7 +30,7 @@ Please use the `sql/table.sql` script to create your tables and the `sql/insert.
 ## Screens to create
 
 Route name |Route type| Route description |
------|---------|
+-----|--|---------|
 `/appliances` | GET | Show all the appliances and their respective electricity usage rates.
 `/streets` | GET | Show a list of all the streets|
 `/meter/:street_id` | GET | Show a list of all the meters in a given street.|
