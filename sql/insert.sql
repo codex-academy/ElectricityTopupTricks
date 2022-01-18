@@ -4,9 +4,7 @@ create table appliance (
 	id serial primary key,
 	name text,
 	rate decimal(4,2)
-
 );
-
 
 create table street (
 	id serial primary key,
