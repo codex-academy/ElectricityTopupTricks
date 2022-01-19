@@ -1,14 +1,14 @@
 const express = require('express');
 const exphbs  = require('express-handlebars');
 const pg = require('pg');
+const Pool = pg.Pool;
 
 const app = express();
 const PORT =  process.env.PORT || 3017;
-const Pool = pg.Pool;
 
 const ElectricityMeters = require('./electricity-meters');
 
-const connectionString = process.env.DATABASE_URL || 'postgresql://localhost:5432/electricity_meter';
+const connectionString = process.env.DATABASE_URL || 'postgresql://topup:topup00@localhost:5432/topups';
 
 const pool = new Pool({
     connectionString  
@@ -34,6 +34,7 @@ app.get('/', function(req, res) {
 
 app.get('/streets', async function(req, res) {
 	const streets = await electricityMeters.streets();
+	console.log(streets);
 	res.render('streets', {
 		streets
 	});
