@@ -57,7 +57,6 @@ app.get('/meter/:street_id', async function(req, res) {
 app.get('/meter/use/:meter_id', async function(req, res) {
 
 	// show the current meter balance and select the appliance you are using electricity for
-
 	res.render('use_electicity', {
 		meters
 	});
@@ -67,7 +66,7 @@ app.post('/meter/use/:meter_id', async function(req, res) {
 
 	// update the meter balance with the usage of the appliance selected.
 	res.render(`/meter/user/${req.params.meter_id}`);
-	
+
 });
 
 // start  the server and start listening for HTTP request on the PORT number specified...
