@@ -4,6 +4,7 @@ Create a web app, to help your local Municipality to track electricity usage per
 
 The factory function is missing some methods and queries. Please sort that out.
 
+Use the [Problem Solving Template](https://docs.google.com/document/d/1wKUO8l00hePmZw1oMRnHuNE933sknrdBDdc2Nu_STEk/copy) to clarify your thinking.
 Ensure to deploy you application to Travis and Heroku.
 
 As you use appliances, your units will drop accordingly.
@@ -57,7 +58,7 @@ Deploy your application to Heroku.
 
 ## URLS - Google Form
 
-1. Once you have setup your **GitHub Repo,** please complete this form: [Electricity Assessment Links](https://docs.google.com/forms/d/e/1FAIpQLSd_psYmolEHxKUBNjSKEetKCMxXGntA-7j7BDM1ADrDK_Ci7w/viewform)
+1. Once you have setup your **GitHub Repo** and **Problem Solving Template** please complete this form: [Electricity Assessment Links](https://docs.google.com/forms/d/e/1FAIpQLSd_psYmolEHxKUBNjSKEetKCMxXGntA-7j7BDM1ADrDK_Ci7w/viewform)
 2. As soon as you have the **App Deployment link**, please update the form.
-* We need both these links by latest 13h00
-* We need your final updates by 17h00.
+* We need all three links by latest 13h00
+* We will review up to your final commit by 17h00.
