@@ -57,4 +57,4 @@ Deploy your application to Heroku.
 
 ## Finally
 
-Once done send your GitHub repo & deployment link to `menters@projectcodex.co`.
+Once done send your GitHub repo & deployment link to `mentors@projectcodex.co`.
