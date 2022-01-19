@@ -55,6 +55,9 @@ Run the tests using `npm test`.
 Create Travis deploy and add a Travis badge to your readme file.
 Deploy your application to Heroku.
 
-## Finally
+## URLS - Google Form
 
-Once done send your GitHub repo & deployment link to `mentors@projectcodex.co`.
+1. Once you have setup your **GitHub Repo,** please complete this form: [Electricity Assessment Links](https://docs.google.com/forms/d/e/1FAIpQLSd_psYmolEHxKUBNjSKEetKCMxXGntA-7j7BDM1ADrDK_Ci7w/viewform)
+2. As soon as you have the **App Deployment link**, please update the form.
+* We need both these links by latest 13h00
+* We need your final updates by 17h00.
