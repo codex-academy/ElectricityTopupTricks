@@ -7,6 +7,7 @@ The factory function is missing some methods and queries. Please sort that out.
 Ensure to deploy you application to Travis ans Heroku.
 
 As you use appliances, your units will drop accordingly.
+## Factory Function
 
 The factory function in `electricity-meters.js` have the following methods. You need to implement them.
 
