@@ -4,7 +4,7 @@ Create a web app, to help your local Municipality to track electricity usage per
 
 The factory function is missing some methods and queries. Please sort that out.
 
-Ensure to deploy you application to Travis ans Heroku.
+Ensure to deploy you application to Travis and Heroku.
 
 As you use appliances, your units will drop accordingly.
 ## Factory Function
