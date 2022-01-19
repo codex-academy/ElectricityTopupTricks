@@ -37,7 +37,7 @@ Route name |Route type| Route description |
 `/appliances` | GET | Show all the appliances and their respective electricity usage rates.
 `/meter/:street_id` | GET | Show a list of all the meters in a given street.|
 `/meter/use/:meter_id`| GET & POST | Create a screen where households can use electricity. Using electricity should decrease the balance in the table for the appropriate table. The users can select the appliance type for which electricity is used from a dropdown.
-`/street/usage`| GET | Create a screen that shows the total electricity balances available for each of the streets. 
+`/street/balances`| GET | Create a screen that shows the total electricity balances available for each of the streets. Show the street name and the balance on the screen. Use a `group by` and a `sum`.
 `/meter/use/:meter_id`| GET & POST | Create a screen where households can buy electricity. Buying electricity should increase the balance in the table for the appropriate table.
 
 The routes that meets the `meter_id` can be linked to from the `/meter/:street_id` screen.
