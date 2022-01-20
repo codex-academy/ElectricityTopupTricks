@@ -16,10 +16,19 @@ Function name            | Description
 `streets`        |   List all the streets that we have records
 `streetMeters`       |  for a given street show all the meters and their balances (use where clause)
 `appliances`             |  List all appliances and their rates
-`topupElectricity`       |  buy electricity for a given `meterId` and `units` (use upate with where)
-`meterData`      |  For a given meterId, list all the data for it 
+`meterData`      |  For a given meterId, return all the data for it 
 `useElectricity`   |  allow a house to use electricity - use `meterId` and `units`
-`totalStreetBalance` | returns the total balance for each street - this is the totally electricity available to use in the whole street.
+`lowestBalanceMeter` | return the meter with the lowest balance. Return the meter_id, balance, street_number and the street_name for the given meter. (`order by, join,  limit 1`)
+`highestBalanceStreet` | Return the street name & totalBalance for the street with the highest total balance (`group by + sum + order by, limit 1`)
+
+### Extra methods
+
+Extra things to try if you still have time left:
+
+Function name            | Description
+------------------------ | ---------------
+`totalStreetBalance` | returns the total balance for each street - this is the total electricity available to use in the whole street. Return a list street names and totals.
+`topupElectricity`       |  buy electricity for a given `meterId` and `units` (use upate with where)
 
 ## Database setup
 
@@ -37,10 +46,22 @@ Route name |Route type| Route description |
 `/appliances` | GET | Show all the appliances and their respective electricity usage rates.
 `/meter/:street_id` | GET | Show a list of all the meters in a given street.|
 `/meter/use/:meter_id`| GET & POST | Create a screen where households can use electricity. Using electricity should decrease the balance in the table for the appropriate table. The users can select the appliance type for which electricity is used from a dropdown.
+
+Show this information on top of the `/streets` route screen:
+
+* the details of the meter with the lowest balance
+* the balance of the street with the highest balance
+
+*Note:* The routes that needs the `meter_id` can be linked to from the `/meter/:street_id` screen.
+
+### Extra routes
+
+Extra things to try if you still have time left:
+
+Route name |Route type| Route description |
+--------|---------|----
 `/street/balances`| GET | Create a screen that shows the total electricity balances available for each of the streets. Show the street name and the balance on the screen. Use a `group by` and a `sum`.
 `/meter/use/:meter_id`| GET & POST | Create a screen where households can buy electricity. Buying electricity should increase the balance in the table for the appropriate table.
-
-The routes that meets the `meter_id` can be linked to from the `/meter/:street_id` screen.
 
 ## Unit Testing
 
